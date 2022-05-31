@@ -1,0 +1,546 @@
+###############################################################################
+#
+# IAR ELF Linker V8.40.1.212/W32 for ARM                  28/May/2022  17:19:48
+# Copyright 2007-2019 IAR Systems AB.
+#
+#    Output file  =
+#        C:\Users\ST-USER\Desktop\LCD_Clock_20220528_2\CathodicMainSRC\Debug\Exe\CathodicMain.out
+#    Map file     =
+#        C:\Users\ST-USER\Desktop\LCD_Clock_20220528_2\CathodicMainSRC\Debug\List\CathodicMain.map
+#    Command line =
+#        -f C:\Users\ST-USER\AppData\Local\Temp\EW7EB8.tmp
+#        (C:\Users\ST-USER\Desktop\LCD_Clock_20220528_2\CathodicMainSRC\Debug\Obj\main.o
+#        C:\Users\ST-USER\Desktop\LCD_Clock_20220528_2\CathodicMainSRC\Debug\Obj\misc.o
+#        C:\Users\ST-USER\Desktop\LCD_Clock_20220528_2\CathodicMainSRC\Debug\Obj\mmi.o
+#        C:\Users\ST-USER\Desktop\LCD_Clock_20220528_2\CathodicMainSRC\Debug\Obj\startup_stm32f10x_hd.o
+#        C:\Users\ST-USER\Desktop\LCD_Clock_20220528_2\CathodicMainSRC\Debug\Obj\stm32f10x_adc.o
+#        C:\Users\ST-USER\Desktop\LCD_Clock_20220528_2\CathodicMainSRC\Debug\Obj\stm32f10x_bkp.o
+#        C:\Users\ST-USER\Desktop\LCD_Clock_20220528_2\CathodicMainSRC\Debug\Obj\stm32f10x_can.o
+#        C:\Users\ST-USER\Desktop\LCD_Clock_20220528_2\CathodicMainSRC\Debug\Obj\stm32f10x_crc.o
+#        C:\Users\ST-USER\Desktop\LCD_Clock_20220528_2\CathodicMainSRC\Debug\Obj\stm32f10x_dac.o
+#        C:\Users\ST-USER\Desktop\LCD_Clock_20220528_2\CathodicMainSRC\Debug\Obj\stm32f10x_dbgmcu.o
+#        C:\Users\ST-USER\Desktop\LCD_Clock_20220528_2\CathodicMainSRC\Debug\Obj\stm32f10x_dma.o
+#        C:\Users\ST-USER\Desktop\LCD_Clock_20220528_2\CathodicMainSRC\Debug\Obj\stm32f10x_exti.o
+#        C:\Users\ST-USER\Desktop\LCD_Clock_20220528_2\CathodicMainSRC\Debug\Obj\stm32f10x_flash.o
+#        C:\Users\ST-USER\Desktop\LCD_Clock_20220528_2\CathodicMainSRC\Debug\Obj\stm32f10x_fsmc.o
+#        C:\Users\ST-USER\Desktop\LCD_Clock_20220528_2\CathodicMainSRC\Debug\Obj\stm32f10x_gpio.o
+#        C:\Users\ST-USER\Desktop\LCD_Clock_20220528_2\CathodicMainSRC\Debug\Obj\stm32f10x_i2c.o
+#        C:\Users\ST-USER\Desktop\LCD_Clock_20220528_2\CathodicMainSRC\Debug\Obj\stm32f10x_it.o
+#        C:\Users\ST-USER\Desktop\LCD_Clock_20220528_2\CathodicMainSRC\Debug\Obj\stm32f10x_iwdg.o
+#        C:\Users\ST-USER\Desktop\LCD_Clock_20220528_2\CathodicMainSRC\Debug\Obj\stm32f10x_pwr.o
+#        C:\Users\ST-USER\Desktop\LCD_Clock_20220528_2\CathodicMainSRC\Debug\Obj\stm32f10x_rcc.o
+#        C:\Users\ST-USER\Desktop\LCD_Clock_20220528_2\CathodicMainSRC\Debug\Obj\stm32f10x_rtc.o
+#        C:\Users\ST-USER\Desktop\LCD_Clock_20220528_2\CathodicMainSRC\Debug\Obj\stm32f10x_sdio.o
+#        C:\Users\ST-USER\Desktop\LCD_Clock_20220528_2\CathodicMainSRC\Debug\Obj\stm32f10x_spi.o
+#        C:\Users\ST-USER\Desktop\LCD_Clock_20220528_2\CathodicMainSRC\Debug\Obj\stm32f10x_tim.o
+#        C:\Users\ST-USER\Desktop\LCD_Clock_20220528_2\CathodicMainSRC\Debug\Obj\stm32f10x_usart.o
+#        C:\Users\ST-USER\Desktop\LCD_Clock_20220528_2\CathodicMainSRC\Debug\Obj\stm32f10x_wwdg.o
+#        C:\Users\ST-USER\Desktop\LCD_Clock_20220528_2\CathodicMainSRC\Debug\Obj\system_stm32f10x.o
+#        C:\Users\ST-USER\Desktop\LCD_Clock_20220528_2\CathodicMainSRC\Debug\Obj\Timer.o
+#        C:\Users\ST-USER\Desktop\LCD_Clock_20220528_2\CathodicMainSRC\Debug\Obj\Uart.o
+#        --redirect _Printf=_PrintfFull --redirect _Scanf=_ScanfFull
+#        --no_out_extension -o
+#        C:\Users\ST-USER\Desktop\LCD_Clock_20220528_2\CathodicMainSRC\Debug\Exe\CathodicMain.out
+#        --map
+#        C:\Users\ST-USER\Desktop\LCD_Clock_20220528_2\CathodicMainSRC\Debug\List\CathodicMain.map
+#        --config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.3\arm\config\linker\GD\GD32F103xE.icf" --semihosting --entry
+#        __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x807'ffff] { ro };
+define block CSTACK with size = 8K, alignment = 8 { };
+define block HEAP with size = 8K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'ffff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind         Address    Size  Object
+  -------            ----         -------    ----  ------
+"A0":                                       0x130
+  .intvec            ro code   0x800'0000   0x130  startup_stm32f10x_hd.o [1]
+                             - 0x800'0130   0x130
+
+"P1":                                      0x3b20
+  .text              ro code   0x800'0130  0x14ac  main.o [1]
+  .text              ro code   0x800'15dc   0x194  stm32f10x_rcc.o [1]
+  .text              ro code   0x800'1770    0x2c  stm32f10x_flash.o [1]
+  .text              ro code   0x800'179c    0xe0  stm32f10x_gpio.o [1]
+  .text              ro code   0x800'187c    0x40  sprintf.o [2]
+  .text              ro code   0x800'18bc    0x80  misc.o [1]
+  .text              ro code   0x800'193c    0xe4  Timer.o [1]
+  .text              ro code   0x800'1a20  0x10c6  xprintffull.o [2]
+  .text              ro code   0x800'2ae6    0x3a  zero_init3.o [4]
+  .text              ro code   0x800'2b20    0x7c  xlocale_c.o [2]
+  .text              ro code   0x800'2b9c    0x16  strchr.o [4]
+  .text              ro code   0x800'2bb2    0x1e  xencoding_8859_1.o [2]
+  .text              ro code   0x800'2bd0    0x40  xfail_s.o [2]
+  .text              ro code   0x800'2c10    0x36  strlen.o [4]
+  .text              ro code   0x800'2c46     0xa  xsprout.o [2]
+  .text              ro code   0x800'2c50    0x58  memchr.o [4]
+  .text              ro code   0x800'2ca8    0xa6  ABImemcpy.o [4]
+  .rodata            const     0x800'2d4e     0x2  xlocale_c.o [2]
+  .text              ro code   0x800'2d50    0x70  frexp.o [3]
+  .text              ro code   0x800'2dc0    0x2e  DblCmpLe.o [3]
+  .rodata            const     0x800'2dee     0x2  xlocale_c.o [2]
+  .text              ro code   0x800'2df0    0x2e  DblCmpGe.o [3]
+  .text              ro code   0x800'2e1e     0x2  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2e20   0x13a  ldexp.o [3]
+  .rodata            const     0x800'2f5a     0x1  xlocale_c.o [2]
+  .text              ro code   0x800'2f5c    0x3a  DblToS32.o [3]
+  .text              ro code   0x800'2f98    0x22  S32ToDbl.o [3]
+  .text              ro code   0x800'2fbc    0xe2  DblSub.o [3]
+  .text              ro code   0x800'30a0   0x246  DblDiv.o [3]
+  .text              ro code   0x800'32e8    0x28  DblToU32.o [3]
+  .text              ro code   0x800'3310    0x1a  U32ToDbl.o [3]
+  .text              ro code   0x800'332c   0x1a2  DblMul.o [3]
+  .text              ro code   0x800'34ce     0xa  xmbcurmax.o [2]
+  .text              ro code   0x800'34d8   0x230  I64DivMod.o [4]
+  .text              ro code   0x800'3708     0x6  abort.o [2]
+  .text              ro code   0x800'3710   0x16a  DblAdd.o [3]
+  .text              ro code   0x800'387c     0x2  I64DivZer.o [4]
+  .text              ro code   0x800'3880    0x14  exit.o [5]
+  .text              ro code   0x800'3894    0xe0  stm32f10x_it.o [1]
+  .text              ro code   0x800'3974    0x20  stm32f10x_exti.o [1]
+  .text              ro code   0x800'3994     0x8  stm32f10x_tim.o [1]
+  .text              ro code   0x800'399c     0x8  stm32f10x_usart.o [1]
+  .text              ro code   0x800'39a4    0x44  stm32f10x_dma.o [1]
+  .text              ro code   0x800'39e8    0x78  lz77_init_single.o [4]
+  .text              ro code   0x800'3a60    0x28  data_init.o [4]
+  .iar.init_table    const     0x800'3a88    0x20  - Linker created -
+  .text              ro code   0x800'3aa8    0x1e  cmain.o [4]
+  .text              ro code   0x800'3ac8    0x1c  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'3ae4     0x4  exit.o [2]
+  .text              ro code   0x800'3ae8     0xa  cexit.o [4]
+  .rodata            const     0x800'3af4    0x1c  main.o [1]
+  .rodata            const     0x800'3b10    0x18  main.o [1]
+  .rodata            const     0x800'3b28    0x18  main.o [1]
+  .rodata            const     0x800'3b40    0x18  main.o [1]
+  .rodata            const     0x800'3b58    0x18  main.o [1]
+  .rodata            const     0x800'3b70    0x18  main.o [1]
+  .rodata            const     0x800'3b88    0x18  main.o [1]
+  .rodata            const     0x800'3ba0    0x18  main.o [1]
+  .rodata            const     0x800'3bb8    0x18  main.o [1]
+  .rodata            const     0x800'3bd0    0x18  main.o [1]
+  .rodata            const     0x800'3be8    0x18  main.o [1]
+  .rodata            const     0x800'3c00    0x18  main.o [1]
+  .text              ro code   0x800'3c18     0xc  cstartup_M.o [4]
+  .rodata            const     0x800'3c24     0x0  zero_init3.o [4]
+  .rodata            const     0x800'3c24     0x0  lz77_init_single.o [4]
+  Initializer bytes  const     0x800'3c24    0x2c  <for P2-1>
+                             - 0x800'3c50  0x3b20
+
+"P2", part 1 of 3:                           0x81
+  P2-1                        0x2000'0000    0x81  <Init block>
+    .data            inited   0x2000'0000    0x38  xlocale_c.o [2]
+    .data            inited   0x2000'0038    0x48  xlocale_c.o [2]
+    .data            inited   0x2000'0080     0x1  main.o [1]
+                            - 0x2000'0081    0x81
+
+"P2", part 2 of 3:                           0x90
+  .bss               zero     0x2000'0084    0x20  main.o [1]
+  .bss               zero     0x2000'00a4    0x20  main.o [1]
+  .bss               zero     0x2000'00c4    0x20  main.o [1]
+  .bss               zero     0x2000'00e4     0x4  main.o [1]
+  .bss               zero     0x2000'00e8     0x4  xfail_s.o [2]
+  .bss               zero     0x2000'00ec     0x2  main.o [1]
+  .bss               zero     0x2000'00ee     0x2  main.o [1]
+  .bss               zero     0x2000'00f0     0x2  main.o [1]
+  .bss               zero     0x2000'00f2     0x2  main.o [1]
+  .bss               zero     0x2000'00f4     0x2  main.o [1]
+  .bss               zero     0x2000'00f6     0x2  main.o [1]
+  .bss               zero     0x2000'00f8     0x2  Timer.o [1]
+  .bss               zero     0x2000'00fa     0x1  main.o [1]
+  .bss               zero     0x2000'00fb     0x1  main.o [1]
+  .bss               zero     0x2000'00fc     0x1  main.o [1]
+  .bss               zero     0x2000'00fd     0x1  main.o [1]
+  .bss               zero     0x2000'00fe     0x1  main.o [1]
+  .bss               zero     0x2000'00ff     0x1  main.o [1]
+  .bss               zero     0x2000'0100     0x1  main.o [1]
+  .bss               zero     0x2000'0101     0x1  main.o [1]
+  .bss               zero     0x2000'0102     0x1  main.o [1]
+  .bss               zero     0x2000'0103     0x1  main.o [1]
+  .bss               zero     0x2000'0104     0x1  main.o [1]
+  .bss               zero     0x2000'0105     0x1  main.o [1]
+  .bss               zero     0x2000'0106     0x1  main.o [1]
+  .bss               zero     0x2000'0107     0x1  main.o [1]
+  .bss               zero     0x2000'0108     0x1  main.o [1]
+  .bss               zero     0x2000'0109     0x1  main.o [1]
+  .bss               zero     0x2000'010a     0x1  main.o [1]
+  .bss               zero     0x2000'010b     0x1  main.o [1]
+  .bss               zero     0x2000'010c     0x1  main.o [1]
+  .bss               zero     0x2000'010d     0x1  main.o [1]
+  .bss               zero     0x2000'010e     0x1  main.o [1]
+  .bss               zero     0x2000'010f     0x1  Timer.o [1]
+  .bss               zero     0x2000'0110     0x1  Timer.o [1]
+                            - 0x2000'0111    0x8d
+
+"P2", part 3 of 3:                         0x2000
+  CSTACK                      0x2000'0118  0x2000  <Block>
+    CSTACK           uninit   0x2000'0118  0x2000  <Block tail>
+                            - 0x2000'2118  0x2000
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+   0x800'3c50   0x807'ffff  0x7'c3b0
+  0x2000'0081  0x2000'0083       0x3
+  0x2000'0114  0x2000'0117       0x4
+  0x2000'2118  0x2000'ffff    0xdee8
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x8d:
+          0x2000'0084  0x8d
+
+Copy/lz77 (__iar_lz77_init_single3)
+    1 source range, total size 0x2c (34% of destination):
+           0x800'3c24  0x2c
+    1 destination range, total size 0x81:
+          0x2000'0000  0x81
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                  ro code  ro data  rw data
+    ------                  -------  -------  -------
+command line/config:
+    -------------------------------------------------
+    Total:
+
+C:\Users\ST-USER\Desktop\LCD_Clock_20220528_2\CathodicMainSRC\Debug\Obj: [1]
+    Timer.o                     228                 4
+    main.o                    5'292      293      134
+    misc.o                      128
+    startup_stm32f10x_hd.o      334
+    stm32f10x_dma.o              68
+    stm32f10x_exti.o             32
+    stm32f10x_flash.o            44
+    stm32f10x_gpio.o            224
+    stm32f10x_it.o              224
+    stm32f10x_rcc.o             404
+    stm32f10x_tim.o               8
+    stm32f10x_usart.o             8
+    -------------------------------------------------
+    Total:                    6'994      293      138
+
+dl7M_tlf.a: [2]
+    abort.o                       6
+    exit.o                        4
+    sprintf.o                    64
+    xencoding_8859_1.o           30
+    xfail_s.o                    64                 4
+    xlocale_c.o                 124       48      128
+    xmbcurmax.o                  10
+    xprintffull.o             4'294
+    xsprout.o                    10
+    -------------------------------------------------
+    Total:                    4'606       48      132
+
+m7M_tl.a: [3]
+    DblAdd.o                    362
+    DblCmpGe.o                   46
+    DblCmpLe.o                   46
+    DblDiv.o                    582
+    DblMul.o                    418
+    DblSub.o                    226
+    DblToS32.o                   58
+    DblToU32.o                   40
+    S32ToDbl.o                   34
+    U32ToDbl.o                   26
+    frexp.o                     112
+    ldexp.o                     314
+    -------------------------------------------------
+    Total:                    2'264
+
+rt7M_tl.a: [4]
+    ABImemcpy.o                 166
+    I64DivMod.o                 560
+    I64DivZer.o                   2
+    cexit.o                      10
+    cmain.o                      30
+    cstartup_M.o                 12
+    data_init.o                  40
+    lz77_init_single.o          120
+    memchr.o                     88
+    strchr.o                     22
+    strlen.o                     54
+    zero_init3.o                 58
+    -------------------------------------------------
+    Total:                    1'162
+
+shb_l.a: [5]
+    exit.o                       20
+    -------------------------------------------------
+    Total:                       20
+
+    Gaps                         19        2
+    Linker created                        32    8'192
+-----------------------------------------------------
+    Grand Total:             15'065      375    8'462
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+.iar.init_table$$Base    0x800'3a88          --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'3aa8          --   Gb  - Linker created -
+?main                    0x800'3aa9         Code  Gb  cmain.o [4]
+ALive_Cpu                0x800'06cb   0x34  Code  Gb  main.o [1]
+BusFault_Handler         0x800'389b    0x2  Code  Gb  stm32f10x_it.o [1]
+CSTACK$$Base            0x2000'0118          --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'2118          --   Gb  - Linker created -
+CacheMore                0x800'2b25   0x28  Code  Lc  xlocale_c.o [2]
+Clock_Count_Check        0x800'1475   0xce  Code  Gb  main.o [1]
+Clock_Setting            0x800'0857  0x100  Code  Gb  main.o [1]
+Clock_count              0x800'1341  0x12a  Code  Gb  main.o [1]
+DMA1_Channel1_IRQHandler
+                         0x800'3961   0x14  Code  Gb  stm32f10x_it.o [1]
+DMA_ClearITPendingBit    0x800'39c5   0x10  Code  Gb  stm32f10x_dma.o [1]
+DMA_GetITStatus          0x800'39a5   0x20  Code  Gb  stm32f10x_dma.o [1]
+DebugMon_Handler         0x800'38a1    0x2  Code  Gb  stm32f10x_it.o [1]
+Delay_ms                 0x800'19d3   0x12  Code  Gb  Timer.o [1]
+Delay_us                 0x800'1a11   0x10  Code  Gb  Timer.o [1]
+EXTI0_IRQHandler         0x800'38af   0x14  Code  Gb  stm32f10x_it.o [1]
+EXTI15_10_IRQHandler     0x800'3945   0x18  Code  Gb  stm32f10x_it.o [1]
+EXTI3_IRQHandler         0x800'38c3    0x2  Code  Gb  stm32f10x_it.o [1]
+EXTI9_5_IRQHandler       0x800'38c9    0x2  Code  Gb  stm32f10x_it.o [1]
+EXTI_ClearITPendingBit   0x800'3989    0x6  Code  Gb  stm32f10x_exti.o [1]
+EXTI_GetFlagStatus       0x800'3975   0x14  Code  Gb  stm32f10x_exti.o [1]
+FLASH_PrefetchBufferCmd
+                         0x800'1783   0x14  Code  Gb  stm32f10x_flash.o [1]
+FLASH_SetLatency         0x800'1771   0x12  Code  Gb  stm32f10x_flash.o [1]
+GPIO_Config              0x800'026b   0xee  Code  Gb  main.o [1]
+GPIO_Init                0x800'179d   0xc0  Code  Gb  stm32f10x_gpio.o [1]
+GPIO_ReadInputDataBit    0x800'185d   0x14  Code  Gb  stm32f10x_gpio.o [1]
+GPIO_ResetBits           0x800'1877    0x6  Code  Gb  stm32f10x_gpio.o [1]
+GPIO_SetBits             0x800'1871    0x6  Code  Gb  stm32f10x_gpio.o [1]
+HSEStartUpStatus        0x2000'0080    0x1  Data  Lc  main.o [1]
+HardFault_Handler        0x800'3897    0x2  Code  Gb  stm32f10x_it.o [1]
+Key_Press_Check_Task     0x800'06ff   0xa4  Code  Gb  main.o [1]
+Key_Process_Task         0x800'07a3   0xb4  Code  Gb  main.o [1]
+LCD_print                0x800'0957  0x118  Code  Gb  main.o [1]
+Lcd_Clear                0x800'0531   0x10  Code  Gb  main.o [1]
+Lcd_Cmd_Set              0x800'0583   0x18  Code  Gb  main.o [1]
+Lcd_DataPort             0x800'05c7   0x66  Code  Gb  main.o [1]
+Lcd_DataPort_Output      0x800'062d   0x6e  Code  Gb  main.o [1]
+Lcd_Dis_Addr             0x800'059b   0x14  Code  Gb  main.o [1]
+Lcd_Dis_Data             0x800'05af   0x18  Code  Gb  main.o [1]
+Lcd_Initial              0x800'04b9   0x78  Code  Gb  main.o [1]
+Lcd_Length_Write         0x800'06a1   0x2a  Code  Gb  main.o [1]
+Lcd_Nibble_Cmd_Set       0x800'0541   0x42  Code  Gb  main.o [1]
+Lcd_Setting_Print_Set    0x800'0ad1  0x84e  Code  Gb  main.o [1]
+MemManage_Handler        0x800'3899    0x2  Code  Gb  stm32f10x_it.o [1]
+NMI_Handler              0x800'3895    0x2  Code  Gb  stm32f10x_it.o [1]
+NVIC_Configuration       0x800'0417   0xa2  Code  Gb  main.o [1]
+NVIC_Init                0x800'18c7   0x60  Code  Gb  misc.o [1]
+NVIC_PriorityGroupConfig
+                         0x800'18bd    0xa  Code  Gb  misc.o [1]
+PendSV_Handler           0x800'38a3    0x2  Code  Gb  stm32f10x_it.o [1]
+RCC_APB2PeriphClockCmd   0x800'16f3   0x1c  Code  Gb  stm32f10x_rcc.o [1]
+RCC_DeInit               0x800'15dd   0x40  Code  Gb  stm32f10x_rcc.o [1]
+RCC_GetFlagStatus        0x800'170f   0x3c  Code  Gb  stm32f10x_rcc.o [1]
+RCC_GetSYSCLKSource      0x800'16b7    0xa  Code  Gb  stm32f10x_rcc.o [1]
+RCC_HCLKConfig           0x800'16c1   0x10  Code  Gb  stm32f10x_rcc.o [1]
+RCC_HSEConfig            0x800'161d   0x38  Code  Gb  stm32f10x_rcc.o [1]
+RCC_PCLK1Config          0x800'16d1   0x10  Code  Gb  stm32f10x_rcc.o [1]
+RCC_PCLK2Config          0x800'16e1   0x12  Code  Gb  stm32f10x_rcc.o [1]
+RCC_PLLCmd               0x800'169f    0x8  Code  Gb  stm32f10x_rcc.o [1]
+RCC_PLLConfig            0x800'168d   0x12  Code  Gb  stm32f10x_rcc.o [1]
+RCC_SYSCLKConfig         0x800'16a7   0x10  Code  Gb  stm32f10x_rcc.o [1]
+RCC_WaitForHSEStartUp    0x800'1655   0x38  Code  Gb  stm32f10x_rcc.o [1]
+RTCAlarm_IRQHandler      0x800'395d    0x2  Code  Gb  stm32f10x_it.o [1]
+RTC_IRQHandler           0x800'38ad    0x2  Code  Gb  stm32f10x_it.o [1]
+Region$$Table$$Base      0x800'3a88          --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'3aa8          --   Gb  - Linker created -
+SDIO_IRQHandler          0x800'395f    0x2  Code  Gb  stm32f10x_it.o [1]
+SPI2_IRQHandler          0x800'38ff    0x2  Code  Gb  stm32f10x_it.o [1]
+SVC_Handler              0x800'389f    0x2  Code  Gb  stm32f10x_it.o [1]
+SysTick_Config           0x800'0159   0x34  Code  Lc  main.o [1]
+SysTick_Configuration    0x800'03fb   0x1c  Code  Gb  main.o [1]
+SysTick_Handler          0x800'38a5    0x8  Code  Gb  stm32f10x_it.o [1]
+System_Init              0x800'01b1   0xba  Code  Gb  main.o [1]
+TIM1_UP_IRQHandler       0x800'38cb    0xc  Code  Gb  stm32f10x_it.o [1]
+TIM2_IRQHandler          0x800'38d7    0xe  Code  Gb  stm32f10x_it.o [1]
+TIM3_IRQHandler          0x800'38e5    0xc  Code  Gb  stm32f10x_it.o [1]
+TIM4_IRQHandler          0x800'38f1    0x2  Code  Gb  stm32f10x_it.o [1]
+TIM8_UP_IRQHandler       0x800'38f3    0xc  Code  Gb  stm32f10x_it.o [1]
+TIM_ClearITPendingBit    0x800'3995    0x8  Code  Gb  stm32f10x_tim.o [1]
+TMcnt                   0x2000'00f8    0x2  Data  Gb  Timer.o [1]
+Timer_Control_Service    0x800'193d   0x96  Code  Gb  Timer.o [1]
+UART4_IRQHandler         0x800'391f    0xa  Code  Gb  stm32f10x_it.o [1]
+USART1_IRQHandler        0x800'3901    0xa  Code  Gb  stm32f10x_it.o [1]
+USART2_IRQHandler        0x800'390b    0xa  Code  Gb  stm32f10x_it.o [1]
+USART3_IRQHandler        0x800'3915    0xa  Code  Gb  stm32f10x_it.o [1]
+USART_ReceiveData        0x800'399d    0x8  Code  Gb  stm32f10x_usart.o [1]
+USB_HP_CAN1_TX_IRQHandler
+                         0x800'38c5    0x2  Code  Gb  stm32f10x_it.o [1]
+USB_LP_CAN1_RX0_IRQHandler
+                         0x800'38c7    0x2  Code  Gb  stm32f10x_it.o [1]
+UsageFault_Handler       0x800'389d    0x2  Code  Gb  stm32f10x_it.o [1]
+Variable_Initial         0x800'0359   0xa2  Code  Gb  main.o [1]
+_Encoding_8859_1_Mbrlen
+                         0x800'2bc5    0x2  Code  Gb  xencoding_8859_1.o [2]
+_Encoding_8859_1_Wctomb
+                         0x800'2bb3   0x12  Code  Gb  xencoding_8859_1.o [2]
+_LitobFull               0x800'2933  0x10a  Code  Lc  xprintffull.o [2]
+_Locale_lconv           0x2000'0000   0x38  Data  Lc  xlocale_c.o [2]
+_PrintfFull              0x800'1a21  0xcc4  Code  Gb  xprintffull.o [2]
+_PutcharsFull            0x800'2aa5   0x2e  Code  Lc  xprintffull.o [2]
+_PutstrFull              0x800'2873   0xc0  Code  Lc  xprintffull.o [2]
+_PuttxtFull              0x800'2767  0x10c  Code  Lc  xprintffull.o [2]
+_SProut                  0x800'2c47    0xa  Code  Gb  xsprout.o [2]
+__ICFEDIT_region_RAM_end__ {Abs}
+                        0x2000'ffff         Data  Gb  <internal module>
+__ICFEDIT_region_RAM_start__ {Abs}
+                        0x2000'0000         Data  Gb  <internal module>
+__NVIC_SetPriority       0x800'0131   0x28  Code  Lc  main.o [1]
+__aeabi_cdcmple          0x800'2dc1         Code  Gb  DblCmpLe.o [3]
+__aeabi_cdrcmple         0x800'2df1         Code  Gb  DblCmpGe.o [3]
+__aeabi_d2iz             0x800'2f5d         Code  Gb  DblToS32.o [3]
+__aeabi_d2uiz            0x800'32e9         Code  Gb  DblToU32.o [3]
+__aeabi_ddiv             0x800'30a1         Code  Gb  DblDiv.o [3]
+__aeabi_dmul             0x800'332d         Code  Gb  DblMul.o [3]
+__aeabi_dsub             0x800'2fbd         Code  Gb  DblSub.o [3]
+__aeabi_i2d              0x800'2f99         Code  Gb  S32ToDbl.o [3]
+__aeabi_ldiv0            0x800'387d         Code  Gb  I64DivZer.o [4]
+__aeabi_memcpy           0x800'2ca9         Code  Gb  ABImemcpy.o [4]
+__aeabi_memcpy4          0x800'2cc9         Code  Gb  ABImemcpy.o [4]
+__aeabi_memcpy8          0x800'2cc9         Code  Gb  ABImemcpy.o [4]
+__aeabi_ui2d             0x800'3311         Code  Gb  U32ToDbl.o [3]
+__aeabi_uldivmod         0x800'34d9         Code  Gb  I64DivMod.o [4]
+__cmain                  0x800'3aa9         Code  Gb  cmain.o [4]
+__exit                   0x800'3881   0x14  Code  Gb  exit.o [5]
+__iar_Fail_s             0x800'2bd1   0x1c  Code  Gb  xfail_s.o [2]
+__iar_Mbcurmax           0x800'34cf    0xa  Code  Gb  xmbcurmax.o [2]
+__iar_Memchr             0x800'2c51         Code  Gb  memchr.o [4]
+__iar_Strchr             0x800'2b9d         Code  Gb  strchr.o [4]
+__iar_dadd               0x800'2fcd         Code  Gb  DblSub.o [3]
+__iar_data_init3         0x800'3a61   0x28  Code  Gb  data_init.o [4]
+__iar_dsub               0x800'3711         Code  Gb  DblAdd.o [3]
+__iar_dsubStart          0x800'3723         Code  Gb  DblAdd.o [3]
+__iar_frexp              0x800'2d5d         Code  Gb  frexp.o [3]
+__iar_frexp64            0x800'2d51         Code  Gb  frexp.o [3]
+__iar_frexpl             0x800'2d5d         Code  Gb  frexp.o [3]
+__iar_globLocale        0x2000'0038   0x48  Data  Lc  xlocale_c.o [2]
+__iar_global_Locale      0x800'2b21    0x4  Code  Gb  xlocale_c.o [2]
+__iar_ldexp64            0x800'2e21         Code  Gb  ldexp.o [3]
+__iar_lz77_init_single3
+                         0x800'39e9   0x78  Code  Gb  lz77_init_single.o [4]
+__iar_program_start      0x800'3c19         Code  Gb  cstartup_M.o [4]
+__iar_scalbln64          0x800'2e21         Code  Gb  ldexp.o [3]
+__iar_scalbn64           0x800'2e21         Code  Gb  ldexp.o [3]
+__iar_zero_init3         0x800'2ae7   0x3a  Code  Gb  zero_init3.o [4]
+__low_level_init         0x800'3acb         Code  Gb  startup_stm32f10x_hd.o [1]
+__vector_table           0x800'0000         Data  Gb  startup_stm32f10x_hd.o [1]
+_call_main               0x800'3ab5         Code  Gb  cmain.o [4]
+_exit                    0x800'3ae9         Code  Gb  cexit.o [4]
+_gLocale_mblen           0x800'2b89    0x4  Code  Gb  xlocale_c.o [2]
+_gLocale_mblenInt        0x800'2b4d   0x2c  Code  Gb  xlocale_c.o [2]
+_gLocale_wctomb          0x800'2b8d    0x4  Code  Gb  xlocale_c.o [2]
+_gLocale_wctombInt       0x800'2b85    0x4  Code  Gb  xlocale_c.o [2]
+_main                    0x800'3ac3         Code  Gb  cmain.o [4]
+abort                    0x800'3709    0x6  Code  Gb  abort.o [2]
+exit                     0x800'3ae5    0x4  Code  Gb  exit.o [2]
+fTMout                  0x2000'010f    0x1  Data  Gb  Timer.o [1]
+frexp                    0x800'2d51         Code  Gb  frexp.o [3]
+frexpl                   0x800'2d51         Code  Gb  frexp.o [3]
+gu16ALive_Cpu_Dly       0x2000'00ec    0x2  Data  Gb  main.o [1]
+gu16_Buzzer_Mode_Dly    0x2000'00f4    0x2  Data  Gb  main.o [1]
+gu16_Key_Press_Dly      0x2000'00ee    0x2  Data  Gb  main.o [1]
+gu16_Run_Step_Dly       0x2000'00f0    0x2  Data  Gb  main.o [1]
+gu16_Setting_Step_Dly   0x2000'00f2    0x2  Data  Gb  main.o [1]
+gu16_clock_sec_timer    0x2000'00e4    0x4  Data  Gb  main.o [1]
+gu16_year_counter       0x2000'00f6    0x2  Data  Gb  main.o [1]
+gu8_500us_Toggle        0x2000'0110    0x1  Data  Gb  Timer.o [1]
+gu8_Buzzer_On_Tm        0x2000'0101    0x1  Data  Gb  main.o [1]
+gu8_Check_Led           0x2000'0100    0x1  Data  Gb  main.o [1]
+gu8_Clock_setting_mode  0x2000'0102    0x1  Data  Gb  main.o [1]
+gu8_Clock_setting_toggle
+                        0x2000'0103    0x1  Data  Gb  main.o [1]
+gu8_Start_Chat          0x2000'00fa    0x1  Data  Gb  main.o [1]
+gu8_Stop_Chat           0x2000'00fd    0x1  Data  Gb  main.o [1]
+gu8_Str1                0x2000'0084   0x20  Data  Gb  main.o [1]
+gu8_Str2                0x2000'00a4   0x20  Data  Gb  main.o [1]
+gu8_date                0x2000'010a    0x1  Data  Gb  main.o [1]
+gu8_date_str            0x2000'00c4   0x20  Data  Gb  main.o [1]
+gu8_day                 0x2000'0109    0x1  Data  Gb  main.o [1]
+gu8_dayset              0x2000'010e    0x1  Data  Gb  main.o [1]
+gu8_fStart              0x2000'00fc    0x1  Data  Gb  main.o [1]
+gu8_fStart_Enable       0x2000'00fb    0x1  Data  Gb  main.o [1]
+gu8_fStop               0x2000'00ff    0x1  Data  Gb  main.o [1]
+gu8_fStop_Enable        0x2000'00fe    0x1  Data  Gb  main.o [1]
+gu8_hour                0x2000'010b    0x1  Data  Gb  main.o [1]
+gu8_min                 0x2000'010c    0x1  Data  Gb  main.o [1]
+gu8_month               0x2000'0108    0x1  Data  Gb  main.o [1]
+gu8_sec                 0x2000'010d    0x1  Data  Gb  main.o [1]
+gu8_year1               0x2000'0104    0x1  Data  Gb  main.o [1]
+gu8_year2               0x2000'0105    0x1  Data  Gb  main.o [1]
+gu8_year3               0x2000'0106    0x1  Data  Gb  main.o [1]
+gu8_year4               0x2000'0107    0x1  Data  Gb  main.o [1]
+ldexp                    0x800'2e21         Code  Gb  ldexp.o [3]
+ldexpl                   0x800'2e21         Code  Gb  ldexp.o [3]
+localeconv               0x800'2b91    0x4  Code  Gb  xlocale_c.o [2]
+main                     0x800'018d   0x24  Code  Gb  main.o [1]
+memchr                   0x800'2c51         Code  Gb  memchr.o [4]
+scalbln                  0x800'2e21         Code  Gb  ldexp.o [3]
+scalblnl                 0x800'2e21         Code  Gb  ldexp.o [3]
+scalbn                   0x800'2e21         Code  Gb  ldexp.o [3]
+scalbnl                  0x800'2e21         Code  Gb  ldexp.o [3]
+scale                    0x800'2a3d   0x46  Code  Lc  xprintffull.o [2]
+sec_hand                0x2000'00e8    0x4  Data  Lc  xfail_s.o [2]
+sprintf                  0x800'187d   0x40  Code  Gb  sprintf.o [2]
+strchr                   0x800'2b9d         Code  Gb  strchr.o [4]
+strlen                   0x800'2c11         Code  Gb  strlen.o [4]
+
+
+[1] = C:\Users\ST-USER\Desktop\LCD_Clock_20220528_2\CathodicMainSRC\Debug\Obj
+[2] = dl7M_tlf.a
+[3] = m7M_tl.a
+[4] = rt7M_tl.a
+[5] = shb_l.a
+
+  15'065 bytes of readonly  code memory
+     375 bytes of readonly  data memory
+   8'462 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
